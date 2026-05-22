@@ -3,7 +3,7 @@ name: Provision Infra using Terraform
 on:
   # TODO: REPLACE THIS WITH PROPER TRIGGER WORKFLOW
   push:
-    branches: ['main']
+    branches: [ "main" ]
 
 jobs:
   terraform:
