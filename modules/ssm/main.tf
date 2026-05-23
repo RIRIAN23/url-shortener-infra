@@ -26,11 +26,6 @@ resource "aws_ssm_parameter" "base_url" {
   type  = "String"
   value = "http://lks-url-alb-1682484174.us-east-1.elb.amazonaws.com"
 
-  lifecycle {
-    # Prevent Terraform from overwriting the value after the initial apply
-    ignore_changes = [value]
-  }
-
   tags = {
     Name    = "/lks-url/base-url"
     Project = "lks-url"
